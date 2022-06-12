@@ -88,6 +88,7 @@ section{
 }
 .media-icons {
    margin-top: 50px;
+   padding-left: 10px;
 }
 .media-icons a{
     color: #1dcc43;
@@ -110,7 +111,7 @@ header{
 }
 header.sticky{
     background: #0bb34b;
-    padding: 10px 20px;
+    padding: 20px 20px;
 }
 header .brand {
     color: #fff;
@@ -508,7 +509,7 @@ body {
         z-index: 888;
         position: fixed;
         background: #fff;
-        top: 54px;
+        top: 0;
         right: 0;
         width: 380px;
         height: 100%;
@@ -525,10 +526,10 @@ body {
         margin: 10px;
         padding: 10px 20px;
         border-radius: 20px;
-       
+        background: #1dcc43;
     }
     header .navigation a:hover{
-        background: #1dcc43;
+      
         color: #fff;
         transition: 0.5s all ease;
     }
@@ -550,20 +551,24 @@ body {
         background-size: 30px;
         background-position: center;
         transition: 0.5s ease;
-        /* filter: invert(1); */
+        filter: invert(1);
 
     }
     section {
-        padding: 80px 20px;
+        padding: 80px 0px;
     }
     .main .content h2 {
-        font-size: 1.8em;
+        font-size: 1.2em;
+        padding-left: 10px;
+        font-weight: 800;
     }
     .animated-text h3 {
         font-size: 2.4em;
+        padding-left: 10px;
     }
     .section-title{
         font-size: 1.8em;
+        
     }
     .about .content {
         flex-direction: column;
@@ -575,6 +580,18 @@ body {
     .about .content .col-right {
         margin-top: 40px;
     }
+    .about .content .col-right .content-title {
+        font-size: 2em;
+        font-weight: 800;
+        margin-bottom: 20px;
+        padding-left: 10px;
+    }
+    .about .content .col-right .paragraph-text {
+        font-size: 1em;
+        padding-left: 10px;
+    }
+
+    /* resposive skills section */
     .skills .content {
         flex-direction: column;
     }
@@ -582,6 +599,10 @@ body {
         position: relative;
         width: 100%;
     }
+    .skills .content .content-title,p {
+        padding-left: 10px;
+    }
+
     .skills .content .col-right {
         margin-top: 40px;
     }
